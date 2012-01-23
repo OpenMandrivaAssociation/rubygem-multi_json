@@ -1,8 +1,8 @@
 %define oname multi_json
 
 Name:       rubygem-%{oname}
-Version:    1.0.3
-Release:    %mkrel 1
+Version:    1.0.4
+Release:    1
 Summary:    A gem to provide swappable JSON backends
 Group:      Development/Ruby
 License:    GPLv2+
