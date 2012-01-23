@@ -12,7 +12,6 @@ BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:   rubygems
 Suggests:   rubygem(rspec)
 BuildRequires: rubygems
-BuildRequires: ruby-rdoc
 BuildArch:  noarch
 Provides:   rubygem(%{oname}) = %{version}
 
@@ -26,7 +25,6 @@ ActiveSupport, or JSON pure.
 %build
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{ruby_gemdir}
 gem install --local --install-dir %{buildroot}%{ruby_gemdir} \
             --force --rdoc %{SOURCE0}
@@ -36,11 +34,7 @@ rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.rspec
 rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.travis.yml
 rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.gemtest
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-, root, root, -)
 %dir %{ruby_gemdir}/gems/%{oname}-%{version}/
 %{ruby_gemdir}/gems/%{oname}-%{version}/.document
 %{ruby_gemdir}/gems/%{oname}-%{version}/lib/
