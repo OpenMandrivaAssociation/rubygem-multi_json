@@ -1,14 +1,13 @@
 %define oname multi_json
 
 Name:       rubygem-%{oname}
-Version:    1.0.4
-Release:	2
+Version:    1.10.1
+Release:	1
 Summary:    A gem to provide swappable JSON backends
 Group:      Development/Ruby
 License:    GPLv2+
 URL:        http://github.com/intridea/multi_json
-Source0:    http://rubygems.org/downloads/%{oname}-%{version}.gem
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
+Source0:    http://rubygems.org/downloads/multi_json-1.10.1.gem
 Requires:   rubygems
 Suggests:   rubygem(rspec)
 BuildRequires: rubygems
@@ -47,23 +46,3 @@ rm -f %{buildroot}%{ruby_gemdir}/gems/%{oname}-%{version}/.gemtest
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/%{oname}.gemspec
 %{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
-
-
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.4-2
-+ Revision: 774161
-- mass rebuild of ruby packages against ruby 1.9.1
-
-* Mon Jan 23 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.0.4-1
-+ Revision: 766964
-- version update 1.0.4
-- spec fixes
-
-* Tue Sep 27 2011 Alexander Barakin <abarakin@mandriva.org> 1.0.3-1
-+ Revision: 701453
-- imported package rubygem-multi_json
-
-* Mon Dec 20 2010 Rémy Clouard <shikamaru@mandriva.org> 0.0.4-1mdv2011.0
-+ Revision: 623517
-- import rubygem-multi_json
-
