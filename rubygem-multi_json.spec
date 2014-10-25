@@ -42,15 +42,15 @@ sed -i /spec.signing_key/d %{rbname}.gemspec
 
 %files
 %doc README.md
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/multi_json
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
+%{gem_dir}/gems/%{rbname}-%{version}/lib/multi_json
 
 %files doc
 %doc LICENSE.md
-%{ruby_gemdir}/doc/%{rbname}-%{version}
+%{gem_dir}/doc/%{rbname}-%{version}
 
 
 
