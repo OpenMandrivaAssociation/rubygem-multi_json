@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{rbname}
 Version:    1.10.1
-Release:    1
+Release:    2
 Summary:    A gem to provide swappable JSON backends
 Group:      Development/Ruby
 License:    GPLv2+
