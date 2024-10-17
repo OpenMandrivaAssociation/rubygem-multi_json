@@ -6,7 +6,7 @@ Release:    2
 Summary:    A gem to provide swappable JSON backends
 Group:      Development/Ruby
 License:    GPLv2+
-URL:        http://github.com/intridea/multi_json
+URL:        https://github.com/intridea/multi_json
 Source0:    http://rubygems.org/downloads/%{rbname}-%{version}.gem
 BuildRequires: rubygems
 
